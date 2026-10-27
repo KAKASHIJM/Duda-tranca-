@@ -1,0 +1,7 @@
+Duda Tranças — acesso ao painel
+
+Senha padrão configurada no backend: Duda123
+Acesse https://SEU-SITE.netlify.app/admin.html após publicar pelo GitHub conectado ao Netlify.
+IMPORTANTE: se a variável DUDA_ADMIN_PASSWORD existir no Netlify, ela terá prioridade sobre Duda123. Para usar Duda123, altere o valor da variável para Duda123 ou remova-a, e publique novamente.
+A publicação por arrastar a pasta HTML pode não disponibilizar as Netlify Functions. Use a implantação do projeto completo pelo GitHub.
+AVISO DE SEGURANÇA: esta é uma senha fraca e agora consta no código do servidor; para uso real, configure uma senha forte exclusivamente em DUDA_ADMIN_PASSWORD e restrinja acesso aos dados.

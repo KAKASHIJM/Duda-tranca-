@@ -1,0 +1,10 @@
+DUDA TRANÇAS — SITE + PAINEL SINCRONIZADOS
+
+1. Publique o projeto COMPLETO via repositório Git conectado ao Netlify (não apenas arrastar arquivos HTML).
+2. Em Netlify > Environment variables, configure DUDA_ADMIN_PASSWORD e faça novo deploy.
+3. Acesse https://SEU-SITE.netlify.app/api/availability: deve retornar JSON, por exemplo {}. Se retornar HTML/404, as funções não foram publicadas.
+4. Abra /admin.html, informe a senha configurada no Netlify e confira o indicador de sincronização.
+5. Abra o site em outro dispositivo e realize um agendamento de teste. Confira no painel após até 5 segundos.
+6. Caso haja erro, verifique Netlify > Logs > Functions, especialmente as funções book, admin e availability.
+
+ATENÇÃO: este pacote melhora o diagnóstico e a atualização da interface, mas não foi testado na sua conta Netlify. O uso de um único documento no Netlify Blobs pode perder atualizações simultâneas; antes de uso comercial é necessário um banco transacional, validação dos preços no servidor e autenticação por sessão. A senha no cabeçalho HTTP não substitui uma sessão segura. Pix exige confirmação manual no banco.
